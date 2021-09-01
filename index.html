@@ -5,33 +5,512 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>Home - DOYOGA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-  
+    <header class="header bg-secondary-light text-neutral py-lg-5">
+      <div class="container">
+        <div class="header-content w-100 d-flex justify-content-between align-items-center">
+          <div class="logo d-flex">
+            <a href="#" title="DOYOGA"><img class="logo-img" src="./assets/images/DOYOGA-logo.png" alt="DOYOGA"></a>
+            <h1 class="fs-6">DOYOGA</h1>
+          </div>                   
+          <ul class="nav list-unstyled d-none d-lg-flex justify-content-between">
+            <li><a class="nav-link text-neutral" href="#" title="課程介紹">課程介紹</a></li>
+            <li><a class="nav-link text-neutral" href="#" title="瑜珈空間">瑜珈空間</a></li>
+            <li><a class="nav-link text-neutral" href="#" title="當月課表">當月課表</a></li>
+          </ul>
+          <div class="d-none d-lg-block">
+            <button class="btn btn-outline-secondary e-rounded" type="button">立即預約</button>
+            <button class="btn btn-outline-secondary e-rounded ms-3" type="button">聯絡我們</button>
+          </div>
+          <a class="d-inline d-lg-none" href="#">
+            <span class="material-icons icon-ham">menu</span>
+          </a>
+        </div>       
       </div>
-    </nav>
+      <div class="dropdown justify-content-between align-items-center">       
+        <ul class="dropdown-list list-unstyled justify-content-between order-2">
+          <li class="dropdown-item"><a class="dropdown-link" href="#">課程介紹</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#">瑜珈空間</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#">當月課表</a></li>
+        </ul>
+        <div class="btn-g order-1">
+          <button class="btn btn-outline-secondary e-rounded" type="button">立即預約</button>
+          <button class="btn btn-outline-secondary e-rounded ms-3" type="button">聯絡我們</button>
+        </div>             
+      </div>
+    </header>
 
-    
-<div class="container">
-  
+    <!-- banner -->
+<div class="banner">
+    <div class="container h-100 d-flex align-items-center">
+        <div class="banner-content text-neutral">
+            <p class="mb-2">健身輕時尚</p>
+            <p class="display-7 fw-bold mb-2">DOYOGA，做你的瑜珈</p>
+            <p class="mb-4">多給自己一點時間享受靜謐，傾聽內心的聲音。</p>
+            <div class="btn-gcta">
+                <button class="btn btn-light fs-3 me-2">立即預約</button>
+                <button class="btn btn-primary fs-3">課程介紹</button>
+            </div>   
+        </div> 
+    </div>   
+    <ul class="icon-gsocial list-unstyled fs-1 text-secondary d-none d-lg-block">
+        <li class="icon-gsocial-item mb-2"><a href="#" title="share on facebook"><i class="fab fa-facebook"></i></a></li>
+        <li class="icon-gsocial-item mb-2"><a href="#" title="share on instagram"><i class="fab fa-instagram"></i></a></li>
+        <li class="icon-gsocial-item"><a href="#" title="share on LINE"><i class="fab fa-line"></i></a></li>
+    </ul>
 </div>
+<!-- service section -->
+<section class="service pt-8 pt-lg-10 pb-12 pb-lg-14">
+    <div class="container">
+        <h2 class="text-center mb-1">感受身心，活在當下</h2>
+        <p class="fs-3 text-center text-primary mb-6 mb-lg-8">DOYOGA 可以帶給你...</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 text-white mb-4 mb-md-0">
+                    <img class="service-img e-rounded" src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="card-img" alt="overall fit">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title mb-1">整體健身</h4>
+                      <p class="card-text">每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 text-white mb-4 mb-md-0">
+                    <img class="service-img e-rounded" src="https://images.unsplash.com/photo-1593810451137-5dc55105dace?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80" class="card-img" alt="stressless">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title mb-1">減壓放鬆</h4>
+                      <p class="card-text">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性目的。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 text-white">
+                    <img class="service-img e-rounded" src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img" alt="partial fit">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title mb-1">局部雕塑</h4>
+                      <p class="card-text">幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- teaching section -->
+<section class="teaching bg-secondary-light pt-8 pb-12 py-lg-14">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="teaching-img w-100 e-rounded" src="https://images.unsplash.com/photo-1540206276207-3af25c08abc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="teaching course">
+            </div>
+            <div class="col-lg-6 teaching-content">
+                <h2 class="text-center text-lg-start">頂尖師資、專業教學</h2>
+                <p class="fs-3 text-primary teaching-content-p mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
+                <ul class="teaching-list list-unstyled text-neutral d-md-flex flex-md-column align-items-md-end ps-md-0">
+                    <li class="card teaching-item align-items-center border-0 e-rounded p-4 px-md-12 py-md-10 mb-4">
+                        <div class="row g-0">
+                            <div class="col-2 px-0 my-auto">
+                                <img class="card-img card-img-lg mx-auto" src="./assets/images/Carol Tang.png" alt="Carol Tang">
+                            </div>
+                            <div class="col-10 px-0 my-auto">
+                                <div class="card-body p-0 ms-4 ms-md-6 ms-lg-5">
+                                    <h3 class="card-title mb-1">Carol Tang 老師</h5>
+                                    <p class="card-text mb-1">教學經歷 10 年</p>
+                                    <p class="card-text">瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li class="card teaching-item border-0 e-rounded p-4 px-md-8 py-md-6 mb-4">
+                        <div class="row g-0">
+                            <div class="col-2 px-0 my-auto">
+                                <img class="card-img mx-auto" src="./assets/images/Kanae.png" alt="Kanae">
+                            </div>
+                            <div class="col-10 px-0 my-auto">
+                                <div class="card-body p-0 ms-4 ms-md-5">
+                                    <h3 class="card-title mb-1">Kanae 老師</h5>
+                                    <p class="card-text">教學經歷 10 年</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li class="card teaching-item border-0 e-rounded p-4 px-md-8 py-md-6">
+                        <div class="row g-0">
+                            <div class="col-2 px-0 my-auto">
+                                <img class="card-img mx-auto" src="./assets/images/Asa Ifrit.png" alt="Asa Ifrit">
+                            </div>
+                            <div class="col-10 px-0 my-auto">
+                                <div class="card-body p-0 ms-4 ms-md-5">
+                                    <h3 class="card-title mb-1">Asa Ifrit 老師</h5>
+                                    <p class="card-text">教學經歷 10 年</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- space section -->
+<section class="space py-12 py-md-13 py-lg-14">
+    <div class="container">
+        <div class="space-content d-flex justify-content-between align-items-center flex-wrap">
+            <div class="space-gimg1">
+                <img class="w-100 h-100 e-rounded" src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="DOYOGA learge training room">
+            </div>
+            <ul class="space-gimg2 list-unstyled">
+                <li class="space-gimg2-item w-100"><img class="w-100 h-100 e-rounded" src="https://images.unsplash.com/photo-1608235375712-be654ace4420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80" alt="DOYOGA guest room"></li>
+                <li class="space-gimg2-item w-100 d-none d-md-block"><img class="w-100 h-100 e-rounded" src="https://images.unsplash.com/photo-1600881333168-2ef49b341f30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="DOYOGA training room"></li>
+            </ul>
+            <div class="space-txt">
+                <h2 class="mb-1">舒適空間、靜心放鬆</h2>
+                <p class="fs-3 text-primary mb-4 mb-lg-6">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
+                <a class="arrow-hover" href="#" title="環境介紹"><p class="mb-4 mb-md-0">環境介紹<span class="material-icons align-middle">arrow_right_alt</span></p></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- course section -->
+<section class="course bg-secondary-light py-12 py-md-13 py-lg-14">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-11 offset-lg-1 my-auto">
+                <div class="course-txt d-block d-lg-none">
+                    <h2 class="mb-1">精心設計、課程多元</h2>
+                    <p class="fs-3 text-primary mb-4 mb-lg-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
+                    <a class="arrow-hover" href="#" title="課程介紹"><p class="mb-4 mb-md-0">課程介紹<span class="material-icons align-middle">arrow_right_alt</span></p></a>                                    
+                </div>  
+                <!-- swiper -->
+                <div class="swiper-container imgOverlaySwiper w-100 h-100 d-none d-lg-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide my-auto">
+                            <div class="course-txt">
+                                <h2 class="mb-1">精心設計、課程多元</h2>
+                                <p class="fs-3 text-primary mb-4 mb-lg-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
+                                <a class="arrow-hover" href="#" title="課程介紹"><p class="mb-4 mb-md-0">課程介紹<span class="material-icons align-middle">arrow_right_alt</span></p></a>                                    
+                            </div>                            
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="card text-white border-0">
+                                <img class="w-100 e-rounded" src="https://images.unsplash.com/flagged/photo-1573556291531-a5d957d7e4e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Yin yoga">
+                                <a class="stretched-link text-white" href="#">
+                                    <div class="card-img-overlay text-center e-rounded">
+                                        <p class="display-7 card-title">基礎課程</p>                                     
+                                    </div>
+                                </a>     
+                            </div>                            
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="card text-white border-0">
+                                <img class="w-100 e-rounded" src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Hot yoga">
+                                <a class="stretched-link text-white" href="#">
+                                    <div class="card-img-overlay text-center e-rounded">
+                                        <p class="display-7 card-title">進階課程</p>                                     
+                                    </div>
+                                </a>     
+                            </div>                            
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="card text-white border-0">
+                                <img class="w-100 e-rounded" src="https://images.unsplash.com/photo-1611077094726-11cf1f992009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Ashtanga yoga">
+                                <a class="stretched-link text-white" href="#">
+                                    <div class="card-img-overlay text-center e-rounded">
+                                        <p class="display-7 card-title">核心訓練</p>                                     
+                                    </div>
+                                </a>     
+                            </div>                            
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="card text-white border-0">
+                                <img class="w-100 e-rounded" src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img" alt="Hatha yoga">
+                                <a class="stretched-link text-white" href="#">
+                                    <div class="card-img-overlay text-center e-rounded">
+                                        <p class="display-7 card-title">柔軟度訓練</p>                                     
+                                    </div>
+                                </a>     
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-block d-lg-none">
+                <div class="row row-cols-2 g-4 gy-md-6">
+                    <div class="col">
+                        <img class="course-img w-100 e-rounded" src="https://images.unsplash.com/flagged/photo-1573556291531-a5d957d7e4e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Yin yoga">
+                    </div>
+                    <div class="col">
+                        <img class="course-img w-100 e-rounded" src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Hot yoga">
+                    </div>
+                    <div class="col">
+                        <img class="course-img w-100 e-rounded" src="https://images.unsplash.com/photo-1611077094726-11cf1f992009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="card-img" alt="Ashtanga yoga">
+                    </div>
+                    <div class="col">
+                        <img class="course-img w-100 e-rounded" src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img" alt="Hatha yoga">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- prcing section -->
+<section class="pricing pt-8 pt-md-10 pb-12 pb-md-13 pb-lg-14">
+    <div class="container">
+        <h2 class="text-center mb-1">方案選擇</h2>
+        <p class="fs-3 text-center text-primary mb-6 mb-lg-8">DOYOGA 可以帶給你...</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card border-primary e-rounded overflow-hidden mb-4 mb-md-6 mb-lg-0">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-12">
+                            <img class="card-img rounded-0 w-100" src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="pricing450">
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <div class="card-body p-6">
+                                <h3 class="card-title text-center text-md-start text-lg-center mb-1">首次體驗</h3>
+                                <p class="fs-3 card-text text-primary text-center text-md-start text-lg-center mb-2">NT $450 / 次</p>
+                                <p class="card-text mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                                <button class="btn btn-primary fs-3 w-100 stretched-link">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-primary e-rounded overflow-hidden mb-4 mb-md-6 mb-lg-0">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-12">
+                            <img class="card-img rounded-0 w-100" src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80" alt="pricing1800">
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <div class="card-body p-6">
+                                <h3 class="card-title text-center text-md-start text-lg-center mb-1">短期體驗</h3>
+                                <p class="fs-3 card-text text-primary text-center text-md-start text-lg-center mb-2">NT $1800 / 月</p>
+                                <p class="card-text mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                                <button class="btn btn-primary fs-3 w-100 stretched-link">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-primary e-rounded overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-12">
+                            <img class="card-img rounded-0 w-100" src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="pricing5600">
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <div class="card-body p-6">
+                                <h3 class="card-title text-center text-md-start text-lg-center mb-1">長期體驗</h3>
+                                <p class="fs-3 card-text text-primary text-center text-md-start text-lg-center mb-2">NT $5600 / 季</p>
+                                <p class="card-text mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                                <button class="btn btn-primary fs-3 w-100 stretched-link">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+<!-- review section -->
+<section class="review bg-secondary-light pt-8 pt-md-10 pb-13 pb-md-14">
+    <div class="container">
+        <h2 class="text-center mb-6 mb-md-8">聽聽他們怎麼說</h2>
+        <div class="swiper reviewSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/Joanne.png" alt="Joanne">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>Joanne</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">服務很好、設備優良！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/Yinming.png" alt="Yinming">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>穎旻</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">上課後身體健康很多</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/Zichi.png" alt="Zichi">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>子琪</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">上課很有趣！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/leaf.png" alt="Leaf">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>葉子</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">老師的教學很專業</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/Ray.png" alt="Ray">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>Ray</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">很舒壓</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0 e-rounded p-4">
+                        <div class="row g-0">
+                            <div class="col-3 my-auto">
+                                <img src="./assets/images/Jiuneyi.png" alt="Jiuneyi">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body p-0">
+                                    <p class="card-title"><small>俊儀</small><small class="ms-2">Oct 17 2020</small></p>
+                                    <div class="star text-primary">
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                        <span class="material-icons">star</span>
+                                    </div>
+                                    <p class="card-text">讚的！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-gbutton text-secondary d-block d-md-none">
+                    <div class="swiper-button-next text-neutral">
+                        <span class="material-icons">east</span>
+                    </div>
+                    <div class="swiper-button-prev text-neutral">
+                        <span class="material-icons">west</span>
+                    </div>  
+                </div> 
+            </div>   
+        </div>
+    </div>
+</section>
 
 
 
 
-    <footer class="footer">
-      footer
+    <footer class="footer bg-secondary text-white">
+      <div class="subscribe pt-6 pb-4 py-md-8 border-bottom border-1 border-white">
+        <div class="container">
+          <div class="subscribe-body d-lg-flex justify-content-between align-items-center">
+            <h2 class="mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h2>
+            <div class="subscribe-bar d-flex justify-content-center">
+              <input type="email" name="email" id="email" placeholder="輸入您的電子信箱">
+              <button class="btn btn-primary">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-title d-flex justify-content-between align-items-center mt-6 mt-md-8 mb-2">
+          <img class="logo-img" src="./assets/images/DOYOGA.png" alt="DOYOGA">
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li><a href="#" title="share on facebook"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt=""></a></li>
+            <li class="ms-2"><a href="#" title="share on instagram"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt=""></a></li>
+            <li class="ms-2"><a href="#" title="share on LINE"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-body d-block d-md-flex pb-8">
+          <ul class="nav-footer list-unstyled">
+            <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
+            <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
+            <li class="mb-2 mb-md-0"><a class="text-white" href="#">當月課表</a></li>
+          </ul>
+          <p class="copyright align-self-end">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    
   </body>
 
 </html>
