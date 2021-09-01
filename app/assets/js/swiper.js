@@ -1,9 +1,3 @@
-$('.icon-ham').click(function(e) {
-  e.preventDefault();
-  $('.dropdown').toggleClass('active')
-})
-
-
 const imgOverlaySwiper = document.querySelector('.imgOverlaySwiper');
 if (imgOverlaySwiper) {
   const swiper = new Swiper('.imgOverlaySwiper', {
@@ -21,7 +15,7 @@ if (reviewSwiper) {
     spaceBetween: 30,
     grid: {
       rows: 3,
-      fill: 'row',
+      fill: 'column',
     },
     navigation: {
       nextEl: ".swiper-button-next",

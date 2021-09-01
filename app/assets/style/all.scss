@@ -5,9 +5,20 @@
 // helpers
 @import "./helpers/base";
 @import "./helpers/mixin";
+@import "./helpers/grid";
+@import "./helpers/util";
 
 // components
 @import "./components/btn-custom";
+@import "./components/card-custom";
+@import "./components/dropdown";
+@import "./components/icon";
+@import "./components/subscribe-bar";
+@import "./components/animation";
 
 // layout
-@import "./layout/index.scss";
+@import "./layout/header";
+@import "./layout/footer";
+
+// pages
+@import "./pages/index.scss";

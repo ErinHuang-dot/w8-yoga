@@ -1,0 +1,271 @@
+// banner
+.banner {
+  position: relative;
+  height: 582px;
+  background-image: url(https://images.unsplash.com/photo-1612157777902-5382bc6e864b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;   
+  @include mobile { 
+    height: 560px;
+  }
+
+  &-content {
+    max-width: 445px;
+    margin-left: 95px;
+    @include pad {
+      margin-left: 0;
+    } 
+    @include mobile {
+      max-width: 100%;
+    }
+    p:nth-of-type(3) {
+      font-size: $font-size-base * 1.5;
+      @include mobile {
+        font-size: $h3-font-size;
+      }
+    }
+  }
+}
+
+.icon-gsocial {
+  position: absolute;
+  top: 35%;
+  right: 1rem;
+  &-item {
+    height: 3rem;
+    &:first-child {
+      font-size: 2.75rem;
+    }
+  }
+}
+// service section
+.service {
+  .card {
+    height: 420px;
+    @include pad {
+      height: 252px;
+    }
+    @include mobile {
+      height: 420px;
+    }
+
+    &-title {
+      @include pad {
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  &-img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// teaching section
+.teaching {
+  &-img {
+    max-height: 628px;
+    object-fit: cover;
+  }
+  &-content {
+    padding-top: $spacer * 1.875;
+    @include pad {
+      padding-top: 0;
+    }
+  }
+  &-content-p {
+    @include pad {
+      width: 66.67%;
+      margin: 0 auto 1.5rem;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-item {
+    width: 100%;
+    @include pad {
+      width: 82.6%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-item:first-child {
+    width: 117.6%;
+    margin-left: -95px;
+    @include pad {
+      width: 91.67%;
+      margin-left: 0;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .card-img {
+    width: 68px;
+    @include mobile {
+      width: 48px;
+    }
+    &-lg {
+      width: 94px;
+      @include mobile {
+        width: 48px;
+      }
+    }
+  }
+
+  .card .row {
+    --bs-gutter-x: 0;
+    width: 100%;
+  }
+
+}
+
+// space section
+.space {
+  &-gimg1 {
+    width: 31.53%;
+    height: 444px;
+    @include pad {
+      width: 30.43%;
+      height: 266px;
+    }
+    @include mobile {
+      width: 47.82%;
+      height: 210px;
+      order: 2;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  &-gimg2 {
+    width: 14.41%;
+    @include pad {
+      width: 13.04%;
+    }
+    @include mobile {
+      width: 47.82%;
+      order: 3;
+    }
+  }
+  &-gimg2-item {    
+    height: 207px;
+    @include pad {
+      height: 117px;
+    }
+    @include mobile {
+      height: 210px;
+    }
+    img {
+      object-fit: cover;
+    }
+    &:first-child {
+      margin-bottom: $spacer * 1.875;
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-txt {
+    width: 48.65%;
+    @include mobile {
+      width: 100%;
+      order: 1;
+    }
+  }
+}
+
+// course section
+.course {
+  //.swiper-slide改了width沒變化
+  // 第四個swiper-slide寬度也不一樣
+  .swiper-slide img {
+    height: 445px;
+    object-fit: cover;
+  }
+  .card-img-overlay {
+    padding: 0;
+    background-color: rgba(192, 164, 165, .7); 
+    opacity: 0;
+    transition: all .5s;  
+  }
+  .card-title {
+    margin-top: 40%;
+  }
+  a:hover .card-img-overlay {
+    opacity: 1;
+  }
+  &-img {
+    object-fit: cover;
+    height: 150px;
+    @include mobile {
+      height: 165px;
+    }
+  }
+}
+
+// pricing section
+.pricing {
+  .card-img {
+    height: 243px;
+    object-fit: cover;
+  }
+  .card .row {
+    --bs-gutter-x: 0;
+  }
+}
+
+// review section
+.review {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    height: calc((100% - 30px) / 2);
+  }
+
+  .card .row {
+    --bs-gutter-x: 0;
+  }
+  
+  .card-title, .star {
+    margin-bottom: $spacer * .625;
+  }
+
+  .swiper-gbutton {
+    font-size: $font-size-base * 2.125;
+  }
+  // .swiper-button-next, .swiper-button-prev {
+  //   z-index: 0;
+  // }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    top: unset;
+    bottom: -38px;
+  }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+    content: '';
+  }
+
+  // .swiper-button-next::after {
+  //   content: '';
+  // }
+
+
+
+}

@@ -1,0 +1,30 @@
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-secondary {
+    color: $white;
+}
+
+.btn-outline-secondary {
+    &:hover, &:active {
+        color: $white;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-light {
+    background-color: $white;
+    color: $neutral;
+    border: 0;
+}

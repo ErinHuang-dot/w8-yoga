@@ -1,0 +1,10 @@
+.service .card-img-overlay {
+    padding: 1.5rem;
+    top: unset;
+    @include pad {
+        padding: 1rem;
+    }
+    @include mobile {
+        padding: 1.5rem;
+    }
+}

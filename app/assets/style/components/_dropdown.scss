@@ -1,0 +1,65 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    padding: 0 $spacer * 2.5;
+    display: none;
+    background: $secondary-light;
+    transition: all 0.8s;
+    overflow: hidden;
+    z-index: 120;
+    @include mobile {
+        text-align: center;
+        padding: 0;
+    }
+    
+    &-list {
+        display: flex;
+        width: 50%;
+        @include mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+    &-item {
+        width: 33%;
+        padding: 0;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &-link {
+        display: block;
+        padding: $spacer 0;
+        text-decoration: none;
+        text-align: center;
+        color: $neutral;
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+        }
+        @include mobile {
+            border-top: 1px solid $white;
+        }
+    }
+    .btn-g {
+        @include mobile {
+            width: 100%;
+            padding: $spacer;
+        }
+        .btn {
+            @include mobile {
+                width: 45%;
+            }
+        }
+    }
+}
+
+.dropdown.active {
+    display: flex;
+    @include mobile {
+        display: block;
+    }
+}
+  

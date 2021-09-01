@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+    @include pad {
+        padding: $spacer * 1.125 0;
+    }
+    @include mobile {
+        padding: $spacer * 1.125 0;
+    }
+    h1 {
+        @include hide-text;
+    }
+}
+
+.logo-img{
+    width: 96px; 
+    vertical-align: middle; 
+}
+
+.nav {
+    width: 23.06%;
+    &-link {
+        padding: .25rem 0;
+        border-bottom: 2px solid $secondary-light;
+        &:hover {
+            border-bottom: 2px solid $secondary;
+        }        
+    }
+}
+
+
+

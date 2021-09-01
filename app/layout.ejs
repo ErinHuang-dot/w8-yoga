@@ -8,24 +8,85 @@
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-  
+    <header class="header bg-secondary-light text-neutral py-lg-5">
+      <div class="container">
+        <div class="header-content w-100 d-flex justify-content-between align-items-center">
+          <div class="logo d-flex">
+            <a href="#" title="DOYOGA"><img class="logo-img" src="./assets/images/DOYOGA-logo.png" alt="DOYOGA"></a>
+            <h1 class="fs-6">DOYOGA</h1>
+          </div>                   
+          <ul class="nav list-unstyled d-none d-lg-flex justify-content-between">
+            <li><a class="nav-link text-neutral" href="#" title="課程介紹">課程介紹</a></li>
+            <li><a class="nav-link text-neutral" href="#" title="瑜珈空間">瑜珈空間</a></li>
+            <li><a class="nav-link text-neutral" href="#" title="當月課表">當月課表</a></li>
+          </ul>
+          <div class="d-none d-lg-block">
+            <button class="btn btn-outline-secondary e-rounded" type="button">立即預約</button>
+            <button class="btn btn-outline-secondary e-rounded ms-3" type="button">聯絡我們</button>
+          </div>
+          <a class="d-inline d-lg-none" href="#">
+            <span class="material-icons icon-ham">menu</span>
+          </a>
+        </div>       
       </div>
-    </nav>
+      <div class="dropdown justify-content-between align-items-center">       
+        <ul class="dropdown-list list-unstyled justify-content-between order-2">
+          <li class="dropdown-item"><a class="dropdown-link" href="#">課程介紹</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#">瑜珈空間</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#">當月課表</a></li>
+        </ul>
+        <div class="btn-g order-1">
+          <button class="btn btn-outline-secondary e-rounded" type="button">立即預約</button>
+          <button class="btn btn-outline-secondary e-rounded ms-3" type="button">聯絡我們</button>
+        </div>             
+      </div>
+    </header>
 
     <%- contents %>
 
-    <footer class="footer">
-      footer
+    <footer class="footer bg-secondary text-white">
+      <div class="subscribe pt-6 pb-4 py-md-8 border-bottom border-1 border-white">
+        <div class="container">
+          <div class="subscribe-body d-lg-flex justify-content-between align-items-center">
+            <h2 class="mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h2>
+            <div class="subscribe-bar d-flex justify-content-center">
+              <input type="email" name="email" id="email" placeholder="輸入您的電子信箱">
+              <button class="btn btn-primary">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-title d-flex justify-content-between align-items-center mt-6 mt-md-8 mb-2">
+          <img class="logo-img" src="./assets/images/DOYOGA.png" alt="DOYOGA">
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li><a href="#" title="share on facebook"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt=""></a></li>
+            <li class="ms-2"><a href="#" title="share on instagram"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt=""></a></li>
+            <li class="ms-2"><a href="#" title="share on LINE"><img class="icon-social-sm" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-body d-block d-md-flex pb-8">
+          <ul class="nav-footer list-unstyled">
+            <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
+            <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
+            <li class="mb-2 mb-md-0"><a class="text-white" href="#">當月課表</a></li>
+          </ul>
+          <p class="copyright align-self-end">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    
   </body>
 
 </html>
