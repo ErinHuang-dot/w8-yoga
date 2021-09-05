@@ -23,6 +23,9 @@
         border-bottom: 2px solid $secondary-light;
         &:hover {
             border-bottom: 2px solid $secondary;
+        }
+        &:active {
+            border-bottom: 2px solid $secondary;
         }        
     }
 }

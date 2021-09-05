@@ -157,6 +157,7 @@
     object-fit: cover;
   }
   .card-img-overlay {
+    top: 0;
     padding: 0;
     background-color: rgba(192, 164, 165, .7); 
     opacity: 0;

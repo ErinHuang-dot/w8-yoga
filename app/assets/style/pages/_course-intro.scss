@@ -51,9 +51,22 @@
     height: 100%;
     overflow: hidden; // swiper有成功的的話再拿掉
   }
+  .swiper-wrapper {
+    @include pad {
+      flex-wrap: wrap;
+    }
+  }
   .swiper-slide { // swiper有成功的的話再拿掉
     width: 29.5%;
     margin-right: 30px;
+    @include pad {
+      width: 47.82%;
+      margin-right: 15px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 }
 
