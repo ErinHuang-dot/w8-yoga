@@ -61,9 +61,24 @@ if (profileSwiper) {
   });
 }
 
+const recomSwiper = document.querySelector('.recomSwiper');
+if (recomSwiper) {
+  const swiper = new Swiper('.recomSwiper', {
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    breakpoints: {
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024:{
+        slidesPerView: 4.5,
+        spaceBetween: 30,
+      },
+    }
+  });
+}
 
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
+
+
 

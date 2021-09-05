@@ -1,3 +1,9 @@
+// card-img-overlay in common
+.card-img-overlay {
+  padding: 1.5rem;
+  top: unset;
+}
+
 // index - service section
 .overlay-img {
   height: 100%;
@@ -21,8 +27,6 @@
 }
 
 .service .card-img-overlay {
-  padding: 1.5rem;
-  top: unset;
   @include pad {
       padding: 1rem;
   }
@@ -47,13 +51,6 @@
   height: 196px;
 }
 
-.course-list .card-img-overlay {
-  padding: 1.5rem;
-  top: unset;
-}
-
-
-
 .course-intro-profile {
   .card {
     margin-top: 50px;
@@ -71,3 +68,28 @@
 }
 
 
+// surroundings
+.surroundings-content {
+  .card {
+    height: 350px;
+    @include pad {
+      height: 210px;
+    }
+    @include mobile {
+      height: 350px;
+    }
+  }
+}
+
+.recom {
+  .card-img-top {
+    height: 196px;
+    object-fit: cover;
+    @include pad {
+      height: 160px;
+    }
+    @include mobile {
+      height: 196px;
+    }
+  }
+}
