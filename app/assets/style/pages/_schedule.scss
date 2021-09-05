@@ -1,0 +1,64 @@
+.schedule-content {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table {
+  border-color: $primary;
+}
+
+.table > :not(caption) > * > :first-child {
+  padding-left: .25rem;
+  padding-right: .25rem;
+  border-right-width: 1px;
+  text-align: center;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: $primary;
+}
+
+.cross-list {
+  width: 65.77%;
+  @include pad {
+    width: 82.6%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    @include pad {
+      justify-content: center;
+    }
+  }
+  &-item:nth-child(even) {
+    justify-content: flex-end;
+    @include pad {
+      justify-content: center;
+    }
+    .cross-list-content {
+      background-color: $primary;
+      color: $white;      
+    }
+  }
+  &-no {
+    font-size: $font-size-base * 2;
+    font-weight: bold;
+    margin-right: $spacer * 1.5;
+  }
+  &-content {
+    padding: 1rem 1.5rem;
+    border: 1px solid $primary;
+    border-radius: 1rem;
+    width: 79.45%;
+    @include pad {
+      width: 100%;
+    }
+    @include mobile {
+      padding: 1rem;
+    }
+  }
+
+}

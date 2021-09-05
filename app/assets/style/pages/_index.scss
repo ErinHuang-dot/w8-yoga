@@ -147,8 +147,11 @@
 
 // course section
 .course {
-  //.swiper-slide改了width沒變化
-  // 第四個swiper-slide寬度也不一樣
+  // 第四個swiper-slide寬度不一樣
+  .swiper-slide { // swiper效果套用成功後再拿掉
+    width: 45%;
+    margin-right: 30px;
+  }
   .swiper-slide img {
     height: 445px;
     object-fit: cover;
@@ -191,8 +194,21 @@
     margin-right: auto;
   }
 
+  .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+
   .swiper-slide {
     height: calc((100% - 30px) / 2);
+    width: 31%; // swiper效果套用成功，以下CSS再拿掉
+    margin-right: 25px;
+    margin-bottom: 1rem;
+    @include pad {
+      width: 46%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
 
   .swiper-gbutton {

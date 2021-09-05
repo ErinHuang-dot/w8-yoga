@@ -44,6 +44,19 @@
   }
 }
 
+// swiper
+.course-intro-profile {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; // swiper有成功的的話再拿掉
+  }
+  .swiper-slide { // swiper有成功的的話再拿掉
+    width: 29.5%;
+    margin-right: 30px;
+  }
+}
+
 
 
 
