@@ -1,0 +1,51 @@
+// course-intro
+.course-intro {
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 7;
+  @include pad {
+    padding-bottom: $spacer * 5;
+  }
+  @include mobile {
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 5.5;
+  }
+}
+
+.feature-img {
+  height: 340px;
+  object-fit: cover;
+  @include mobile {
+    height: 218px;
+  }
+}
+
+.course-search select {
+  height: 38px;
+}
+
+.course-list {
+  padding-top: $spacer * 3.375;
+  @include mobile {
+    padding-top: $spacer * 2.875;
+  }
+  .course-mark {
+    position: absolute;
+    top: -15px;
+    left: 24px;
+  }
+  &-end {
+    @include pad {
+      max-width: 330px;
+      margin-top: 0;
+    }
+  }
+  .row {
+    --bs-gutter-y: 1.875rem;
+  }
+}
+
+
+
+
+
+

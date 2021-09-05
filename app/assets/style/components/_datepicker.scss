@@ -1,0 +1,8 @@
+// datepicker
+.secondary{
+    color: $secondary;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+background-color: $secondary;
+}

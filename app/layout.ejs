@@ -8,7 +8,9 @@
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -46,6 +48,11 @@
         </div>             
       </div>
     </header>
+    <ul class="icon-gsocial list-unstyled fs-1 text-secondary d-none d-lg-block">
+      <li class="icon-gsocial-item mb-2"><a href="#" title="share on facebook"><i class="fab fa-facebook"></i></a></li>
+      <li class="icon-gsocial-item mb-2"><a href="#" title="share on instagram"><i class="fab fa-instagram"></i></a></li>
+      <li class="icon-gsocial-item"><a href="#" title="share on LINE"><i class="fab fa-line"></i></a></li>
+    </ul>
 
     <%- contents %>
 
@@ -54,7 +61,7 @@
         <div class="container">
           <div class="subscribe-body d-lg-flex justify-content-between align-items-center">
             <h2 class="mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h2>
-            <div class="subscribe-bar d-flex justify-content-center">
+            <div class="button-bar subscribe-bar d-flex justify-content-center">
               <input type="email" name="email" id="email" placeholder="輸入您的電子信箱">
               <button class="btn btn-primary">訂閱</button>
             </div>
@@ -82,8 +89,10 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     

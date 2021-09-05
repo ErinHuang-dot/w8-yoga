@@ -1,0 +1,52 @@
+// reservation
+.reserve {
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 6.5;
+  @include pad {
+    padding-bottom: $spacer * 5;
+  }
+  @include mobile {
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 5.5;
+  }
+  &-content-md {
+    width: 40%;
+    @include pad {
+      width: 64.5%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  // reservation-done
+  .icon-check {
+    font-size: $font-size-base * 2.5;
+  }
+  &-content-sm {
+    width: 33.33%;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+}
+
+.card-reserve-info {
+  width: 48.65%;
+  @include pad {
+    width: 65.2%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.progress-status {
+    li {
+      padding: .75rem 3rem;
+      @include pad {
+        padding: .75rem .875rem;
+      }
+      @include mobile {
+        padding: .75rem 1.25rem;
+      }
+      &:not(:last-child) {
+        margin-right: $spacer * 1.875;
+        @include mobile {
+          margin-right: $spacer;
+        }
+      }
+    }
+    .active {
+      background-color: $secondary;
+      color: white;
+    }
+    .inactive {
+      background-color: $secondary-light;
+      color: $secondary;
+    }
+  
+  }

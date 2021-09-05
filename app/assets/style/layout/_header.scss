@@ -27,5 +27,18 @@
     }
 }
 
+.icon-gsocial {  // 可以再測試滾到最後面時可不可以隱藏
+    position: fixed;
+    top: 43%;
+    right: 1rem;
+    z-index: 50;
+    &-item {
+      height: 3rem;
+      &:first-child {
+        font-size: 2.75rem;
+      }
+    }
+  }
+
 
 

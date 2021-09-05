@@ -28,41 +28,6 @@
   }
 }
 
-.icon-gsocial {
-  position: absolute;
-  top: 35%;
-  right: 1rem;
-  &-item {
-    height: 3rem;
-    &:first-child {
-      font-size: 2.75rem;
-    }
-  }
-}
-// service section
-.service {
-  .card {
-    height: 420px;
-    @include pad {
-      height: 252px;
-    }
-    @include mobile {
-      height: 420px;
-    }
-
-    &-title {
-      @include pad {
-        font-size: $font-size-base;
-      }
-    }
-  }
-
-  &-img {
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 // teaching section
 .teaching {
   &-img {
@@ -209,19 +174,16 @@
   }
 }
 
-// pricing section
-.pricing {
-  .card-img {
-    height: 243px;
-    object-fit: cover;
-  }
+// review section
+.review {
   .card .row {
     --bs-gutter-x: 0;
   }
-}
 
-// review section
-.review {
+  .card-title, .star {
+    margin-bottom: $spacer * .625;
+  }
+
   .swiper {
     width: 100%;
     height: 100%;
@@ -233,20 +195,10 @@
     height: calc((100% - 30px) / 2);
   }
 
-  .card .row {
-    --bs-gutter-x: 0;
-  }
-  
-  .card-title, .star {
-    margin-bottom: $spacer * .625;
-  }
-
   .swiper-gbutton {
     font-size: $font-size-base * 2.125;
   }
-  // .swiper-button-next, .swiper-button-prev {
-  //   z-index: 0;
-  // }
+
   .swiper-button-prev {
     left: 0;
   }
@@ -261,11 +213,5 @@
   .swiper-button-prev::after, .swiper-button-next::after {
     content: '';
   }
-
-  // .swiper-button-next::after {
-  //   content: '';
-  // }
-
-
 
 }

@@ -39,10 +39,31 @@ if (reviewSwiper) {
         },
       },
     }
+  });
+}
+
+
+const profileSwiper = document.querySelector('.profileSwiper');
+if (profileSwiper) {
+  const swiper = new Swiper('.profileSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+      768:{
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024:{
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    }
+  });
+}
+
+
     // pagination: {
     //   el: ".swiper-pagination",
     //   clickable: true,
     // },
-  });
-}
 

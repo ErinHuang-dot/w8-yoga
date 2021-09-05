@@ -1,0 +1,240 @@
+---
+title: Course Intro - DOYOGA
+layout: ./app/layout.ejs
+engine: ejs
+current: course
+---
+<main class="course-intro">
+    <!-- feature -->
+    <section class="feature mb-12 mb-md-15 mb-lg-14">    
+        <div class="container">
+            <h2 class="text-center mb-6 mb-lg-8">課程介紹</h2>
+            <div class="row">
+                <div class="col-md-6 offset-lg-1 mb-2 mb-md-0">
+                    <img class="feature-img w-100 e-rounded" src="https://images.unsplash.com/photo-1540206276207-3af25c08abc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="teaching course">
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <h2 class="mb-1">本月限定課程 - 空中瑜珈</h2>
+                    <p class="text-primary mb-4">授課老師：Carol Tang
+                        <span class="text-white bg-secondary e-rounded px-4 py-1 ms-2">
+                            <small>60 min</small>
+                        </span>
+                    </p>
+                    <p class="mb-4">使用掛布懸在半空，進行哈達瑜珈體位法練習<br> 
+                       藉由地心引力的重力原理<br>
+                       鍛鍊核心肌群，舒緩脊椎壓力<br>
+                       訓練身體協調性，深層放鬆身體<br>
+                       課堂裡老師會視同學狀況安排教導倒立動作<br>
+                       對於不敢嘗試倒立的同學來說<br>
+                       藉由掛布的支持與保護<br>
+                       加上老師細心指導，讓同學能更快掌握
+                    </p>
+                    <button class="btn btn-primary fs-3">立即預約</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- search-bar -->
+    <div class="course-search bg-primary py-5">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div class="button-bar search-bar d-flex justify-content-center me-2 mb-2 mb-md-0">
+                    <input type="text" name="search" id="search" placeholder="請輸入要搜尋的課程">
+                    <button class="btn btn-secondary">搜尋</button>
+                </div>
+                <select class="text-secondary border-0" name="cousre-list" id="courseList">
+                    <option class="text-secondary" value="all">全部課程</option>
+                    <option class="text-secondary" value="basic">基礎 Basic</option>
+                    <option class="text-secondary" value="iyengar">艾揚格 Iyengar</option>
+                    <option class="text-secondary" value="hatha">哈達 Hatha</option>
+                    <option class="text-secondary" value="universal">寰宇 Universal</option>
+                    <option class="text-secondary" value="arco-yoga">雙人飛行 Arco Yoga</option>
+                    <option class="text-secondary" value="ashtanga">阿斯坦加 Ashtanga</option>
+                    <option class="text-secondary" value="yin-yang">陰陽 Yin Yang</option>
+                    <option class="text-secondary" value="aroma-yoga">香氛 Aroma Yoga</option>
+                </select>
+            </div>          
+        </div>
+    </div>
+    <!-- course-list -->
+    <section class="course-list border-bottom border-secondary pb-12 pb-lg-14">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mb-8 mb-md-10 mb-lg-0">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/flagged/photo-1573556291531-a5d957d7e4e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="basic">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">基礎 Basic</h2>
+                                    <p class="card-text">授課老師：Carol Tang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="Iyengar">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">艾揚格 Iyengar</h2>
+                                    <p class="card-text">授課老師：Kanae</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1611077094726-11cf1f992009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="Hatha">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">哈達 Hatha</h2>
+                                    <p class="card-text">授課老師：Kuzuha</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Universal">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">寰宇 Universal</h2>
+                                    <p class="card-text">授課老師：Kuzuha</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1573462239448-06b5cde9df64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=718&q=80" alt="Arco Yoga">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">雙人飛行 Arco Yoga</h2>
+                                    <p class="card-text">授課老師：Kuzuha、Kanae</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1554245064-3ab88761ac5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ashtanga">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">阿斯坦加 Ashtanga</h2>
+                                    <p class="card-text">授課老師：Kanae</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1601568870227-099504d72c3c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Yin Yang">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">陰陽 Yin Yang</h2>
+                                    <p class="card-text">授課老師：Asa Chen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <div class="card border-0 text-white">
+                                <img class="overlay-img card-img e-rounded" src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Aroma Yoga">
+                                <span class="course-mark text-white bg-primary e-rounded px-4 py-1"><small>60 min</small></span>
+                                <div class="card-img-overlay">
+                                    <h2 class="card-title mb-0">香氛 Aroma Yoga</h2>
+                                    <p class="card-text">授課老師：Asa Chen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 course-list-end mx-auto">
+                    <h3 class="mb-2">DOYOGA 上課須知：</h3>
+                    <p class="mb-1">請攜帶適當的瑜珈墊和一條長毛巾配合課程使用。</p>
+                    <p class="mb-1">運動中請穿著有彈性、吸汗、透氣為原則的衣物，盡量穿著較貼身的運動衣，以便教練指導與自我矯正。</p>
+                    <p class="mb-1">運動中切記補充適當的水分、保持腹式呼吸，以鼻吸氣，以口呼氣為原則。</p>
+                    <p class="mb-1">運動中請保持微收小腹的原則，肩膀放鬆、頭頂向上延伸，請跟隨教練指示，配合呼吸一步步的確實練習。</p>
+                    <p class="mb-1">運動過程中若感到任何不適，請馬上停止且與老師商量討論。 若懷孕或特殊疾病請先告知。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- course-intro-list -->
+    <section class="course-intro-list pt-8 pt-lg-10">
+        <div class="container">
+            <h2 class="text-center mb-6 mb-lg-8">師資介紹</h2>
+            <!-- swiper -->
+            <div class="swiper profileSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card w-100 bg-primary text-white e-rounded">
+                            <img  class="card-img-top border-secondary" src="./assets/images/Carol Tang.png" alt="Carol Tang">
+                            <div class="card-body pt-13 px-6">
+                                <div class="card-title text-center mb-4">
+                                    <h3 class="mb-1">Carol Tang 老師</h3>
+                                    <p>教學經歷 10 年</p>
+                                </div>
+                                <p class="card-text mb-4">“因為瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。<br>
+                                    我希望能跟學生們分享瑜珈的好，讓大 家能藉由瑜珈看見自己的內在與潛能， 並將瑜珈自然的融入自己的生活中。”</p>
+                                <ul class="profile-list">
+                                    <li class="mb-1">・協會認證艾揚格瑜珈老師</li>
+                                    <li class="mb-1">・2010 年完成四年的艾揚格師資培訓</li>
+                                    <li>・2020 取得艾揚格瑜珈高階認證</li>
+                                </ul>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 bg-secondary text-white e-rounded">
+                            <img  class="card-img-top border-primary" src="./assets/images/Kanae.png" alt="Kanae">
+                            <div class="card-body pt-13 px-6">
+                                <div class="card-title text-center mb-4">
+                                    <h3 class="mb-1">Kanae 老師</h3>
+                                    <p>教學經歷 3 年</p>
+                                </div>
+                                <p class="card-text mb-4">“希望每個人透過觀察，感受在在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，帶著放鬆的心情，享受瑜珈和生命的喜悅，並樂在其​中。”</p>
+                                <ul class="profile-list">
+                                    <li class="mb-1">・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                    <li class="mb-1">・自然呼吸瑜珈會館開授倒立研習</li>
+                                    <li>・簡善琳瑜珈會館開授倒立研習</li>
+                                </ul>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 bg-primary text-white e-rounded">
+                            <img  class="card-img-top border-0" src="./assets/images/Kuzuha.png" alt="Kuzuha">
+                            <div class="card-body pt-13 px-6">
+                                <div class="card-title text-center mb-4">
+                                    <h3 class="mb-1">Kuzuha 老師</h3>
+                                    <p>教學經歷 3 年</p>
+                                </div>
+                                <p class="card-text mb-4">“瑜珈是一種生活態度，<br> 
+                                    學習平衡不強求，堅持不放棄，<br> 
+                                    修煉心靈活在當下。”</p>
+                                <ul class="profile-list">
+                                    <li class="mb-1">・協會認證艾揚格瑜珈老師</li>
+                                    <li class="mb-1">・2010 年完成四年的艾揚格師資培訓</li>
+                                    <li>・2020 取得艾揚格瑜珈高階認證</li>
+                                </ul>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 bg-secondary text-white e-rounded">
+                            <img  class="card-img-top border-primary" src="./assets/images/Asa Ifrit.png" alt="Asa Ifrit">
+                            <div class="card-body pt-13 px-6">
+                                <div class="card-title text-center mb-4">
+                                    <h3 class="mb-1">Asa Ifrit 老師</h3>
+                                    <p>教學經歷 5 年</p>
+                                </div>
+                                <p class="card-text mb-4">“帶著懵懂和好奇開始了瑜珈的探索。 追隨印度瑜珈大師 Atui Shri 學習呼吸控制和冥想以及完成瑜珈大師宋光明師資培訓。”</p>
+                                <ul class="profile-list">
+                                    <li class="mb-1">・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                    <li>・AshtangsTTC50小時認證</li>
+                                </ul>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+</main>
+

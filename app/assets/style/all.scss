@@ -11,9 +11,12 @@
 // components
 @import "./components/btn-custom";
 @import "./components/card-custom";
-@import "./components/dropdown";
 @import "./components/icon";
-@import "./components/subscribe-bar";
+@import "./components/dropdown";
+@import "./components/button-bar";
+@import "./components/progress-status";
+@import "./components/datepicker";
+@import "./components/form";
 @import "./components/animation";
 
 // layout
@@ -22,3 +25,5 @@
 
 // pages
 @import "./pages/index.scss";
+@import "./pages/reservation";
+@import "./pages/course-intro";

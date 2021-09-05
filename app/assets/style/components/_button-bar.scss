@@ -1,0 +1,27 @@
+.button-bar {
+    input {
+        border: 0;
+        border-radius: 4px 0 0 4px;
+    }
+    .btn {
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.subscribe-bar {
+    max-width: 350px;
+    input {
+        padding: .5rem 1rem;
+    }
+}
+
+.search-bar {
+    max-width: 350px;
+    input, .btn {
+        padding: .375rem .75rem;
+    }
+    input {
+        max-width: 294px;
+    }
+}
+

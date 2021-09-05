@@ -12,6 +12,13 @@
 
 .btn-secondary {
     color: $white;
+    &:hover, &:focus {
+        color: $white;
+    }
+}
+
+.btn-secondary-light {
+    color: $secondary;
 }
 
 .btn-outline-secondary {

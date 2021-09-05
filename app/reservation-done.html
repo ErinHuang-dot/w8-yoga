@@ -1,0 +1,43 @@
+---
+title: Reservation Done - DOYOGA
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation
+---
+<div class="reserve">
+    <div class="container">
+        <h2 class="text-center mb-6 mb-md-4">立即預約</h2>
+        <ul class="progress-status d-flex justify-content-center mb-8 mb-md-6 mb-lg-8">
+            <li class="inactive e-rounded">選擇方案</li>
+            <li class="inactive e-rounded">填寫資料</li>
+            <li class="active e-rounded">完成預約</li>
+        </ul>
+        <h3 class="text-center mb-8">
+            <span class="icon-check material-icons mb-5">check_circle_outline</span><br>
+            已完成預約，以下是您的預約資訊：
+        </h3>
+        <div class="card-reserve-info card border-primary mx-auto mb-6">
+            <div class="card-header bg-secondary text-white d-flex justify-content-between align-items-center px-5 py-4">
+                <h4>預約資訊</h4>
+                <span class="material-icons">expand_more</span>
+            </div>
+            <div class="card-body text-secondary px-5 py-4">
+              <h4 class="card-title fw-bold mb-4">您預約的是<span class="fs-3 text-primary ms-2">首次體驗課程-基礎</span></h4>
+              <ul class="card-text-list">
+                  <li class="mb-2">上課預約報到日：2021/07/21</li>
+                  <li class="mb-2">預約人：Joanne Chen</li>
+                  <li class="mb-2">年齡：18 歲</li>
+                  <li class="mb-2">性別：女</li>
+                  <li class="mb-2">電子信箱：example123@gmail.com</li>
+                  <li>手機號碼：0912-345-678</li>
+              </ul>
+            </div>
+          </div>
+        <h3 class="text-center mb-2">上課注意事項</h3>
+        <div class="reserve-content-sm mx-auto">
+            <p class="mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <button class="btn btn-primary fs-3 w-100">返回首頁</button>    
+        </div>
+    </div>
+</div>
+
