@@ -81,8 +81,24 @@ if (profileSwiper) {
       }
     }
   });
-} // pagination: {
-//   el: ".swiper-pagination",
-//   clickable: true,
-// },
+}
+
+var recomSwiper = document.querySelector('.recomSwiper');
+
+if (recomSwiper) {
+  var _swiper3 = new Swiper('.recomSwiper', {
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 4.5,
+        spaceBetween: 30
+      }
+    }
+  });
+}
 //# sourceMappingURL=all.js.map
